@@ -1,4 +1,4 @@
-# The C Programming Language Exercise Solutions
+# TCPL2 Exercise Solutions
 
 This repository will contain solutions for all the exercises found on the book "The C Programming Language, 2nd ed" by Kernighan and Ritchie (or at least, I sure hope it will).
 
