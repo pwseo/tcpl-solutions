@@ -5,12 +5,12 @@ BINARIES := $(patsubst %.c, %, $(wildcard tcpl.*.c))
 
 all: $(BINARIES)
 
-$(BINARIES):
-	@echo "Compiling $@.c..."
-	@$(CC) -o $@ $(CFLAGS) $@.c
+%: %.c
+	@echo "Compiling $^..."
+	@$(CC) -o $@ $(CFLAGS) $^
 
 clean:
 	@echo "Deleting executables..."
-	@find . -iname "tcpl.*" -type f -executable -exec rm {} \;
+	@rm -rf $(BINARIES)
 
 .PHONY: clean
